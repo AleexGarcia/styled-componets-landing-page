@@ -7,7 +7,7 @@ import {
 import srcLogo from "../../assets/logo.svg";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import Navbar from "../Navbar/Navbar";
+import Navbar from "./Navbar/Navbar";
 import { useState } from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Button from "../Button/Button";
@@ -26,7 +26,7 @@ function Header() {
         <MenuButton onClick={toggleMenu}>
           {isOpen ? <CloseIcon /> : <MenuIcon />}
         </MenuButton>
-        {isOpen || matches && <Navbar />}
+        {(matches || isOpen) && <Navbar />}
         {matches && <Button>Request invite</Button>}
       </Container>
     </HeaderBox>

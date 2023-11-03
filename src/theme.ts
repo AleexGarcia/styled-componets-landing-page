@@ -13,7 +13,8 @@ export const theme = {
   },
 
   fontSizes: {
-    normal: '18px'
+    normal: '18px',
+    title: '32px'
   },
   fontWeight: {
     light: '300',
