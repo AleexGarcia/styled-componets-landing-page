@@ -4,6 +4,9 @@ export const Header = styled.header`
   max-height: 10vh;
   padding: 1rem 0;
   width: 100vw;
+  background-color: white;
+  z-index: 100;
+  position: relative;
 `;
 
 export const Logo = styled.img``;

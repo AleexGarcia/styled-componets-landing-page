@@ -5,18 +5,14 @@ import {
   Text,
   Box,
   Image,
-  ImageRatio,
   ContentBox,
 } from "./Banner.Styled";
-import srcImge from "../../assets/images/image-mockups.png";
 
 function Banner() {
   return (
     <Box>
       <Container>
-        <ImageRatio>
-          <Image src={srcImge} />
-        </ImageRatio>
+          <Image  />
         <ContentBox>
           <Title>Next generation digital banking</Title>
           <Text>
