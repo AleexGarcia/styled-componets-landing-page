@@ -13,7 +13,7 @@ function ArticleCard({author,title,resume,url}:IArticleCard) {
     <ArticleBox>
       <Image src={url}/>
       <ContentBox>
-        <Author>{author}</Author>
+        <Author>By {author}</Author>
         <Title>{title}</Title>
         <Description>{resume}</Description>
       </ContentBox>

@@ -7,11 +7,12 @@ export const Header = styled.header`
   background-color: white;
   z-index: 100;
   position: relative;
+  width: 100%;
 `;
 
 export const Logo = styled.img``;
 
-export const Container = styled.header`
+export const Container = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-between;
