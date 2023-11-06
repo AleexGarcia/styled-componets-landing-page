@@ -14,4 +14,14 @@ export const Title = styled.h2`
     text-align: center;
 
 `;
-export const ArticlesCardsBox = styled.div``;
+export const ArticlesCardsBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1%;
+    }
+
+`;

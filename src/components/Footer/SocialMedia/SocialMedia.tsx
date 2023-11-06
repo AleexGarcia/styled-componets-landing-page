@@ -26,7 +26,7 @@ function SocialMedia() {
   return (
     <Box>
       {socialmedia.map((media) => (
-        <Link target="_blank" href={media.url}>
+        <Link key={media.icon} target="_blank" href={media.url}>
           <Icon src={media.icon} />
         </Link>
       ))}

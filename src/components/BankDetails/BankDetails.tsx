@@ -1,5 +1,6 @@
 import {
   CardsBox,
+  Container,
   ContentBox,
   DetailsBox,
   SubTitle,
@@ -36,14 +37,20 @@ function BankDetails() {
   ];
   return (
     <DetailsBox>
-      <ContentBox>
-        <Title>Why choose Easybank?</Title>
-        <SubTitle>
-          We leverage Open Banking to turn your bank account into your financial
-          hub. Control your finances like never before.
-        </SubTitle>
-      </ContentBox>
-      <CardsBox>{cards.map(card => <DetailsCard key={card.title} {...card}/>)}</CardsBox>
+      <Container>
+        <ContentBox>
+          <Title>Why choose Easybank?</Title>
+          <SubTitle>
+            We leverage Open Banking to turn your bank account into your
+            financial hub. Control your finances like never before.
+          </SubTitle>
+        </ContentBox>
+        <CardsBox>
+          {cards.map((card) => (
+            <DetailsCard key={card.title} {...card} />
+          ))}
+        </CardsBox>
+      </Container>
     </DetailsBox>
   );
 }

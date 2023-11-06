@@ -58,11 +58,12 @@ export const ContentBox = styled.div`
 
 export const Title = styled.h2`
   font-size: ${(props) => props.theme.fontSizes.title};
-  font-weight: ${(props) => props.theme.fontWeight.bold};
-  color: #000;
+  font-weight: ${(props) => props.theme.fontWeight.regular};
+  color: ${(props) => props.theme.colors.darkblue};
 `;
+
 export const Text = styled.p`
   font-size: ${(props) => props.theme.fontSizes.normal};
   font-weight: ${(props) => props.theme.fontWeight.regular};
-  color: ${(props) => props.theme.colors.veryLightGray};
+  color: ${(props) => props.theme.colors.grayishBlue};
 `;
