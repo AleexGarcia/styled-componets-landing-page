@@ -20,8 +20,7 @@ export const FooterBox = styled.section`
   }
 `;
 export const Logo = styled.img`
-  fill: #fff;
-  color: #fff;
+  
 `;
 export const CopyrightText = styled.p`
   color: ${(props) => props.theme.colors.grayishBlue};

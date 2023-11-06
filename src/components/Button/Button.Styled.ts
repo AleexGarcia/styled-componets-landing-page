@@ -6,10 +6,17 @@ export const Button = styled.button`
   border: none;
   font-weight: bold;
   border-radius: 2.5rem;
-  background-image: linear-gradient(
-    to left,
-    ${(props) => props.theme.colors.brightCyan},
-    ${(props) => props.theme.colors.limeGreen}
-  );
-  
+  position: relative;
+  background: linear-gradient(
+      to left,
+      ${(props) => props.theme.colors.brightCyan},
+      ${(props) => props.theme.colors.limeGreen}
+    ),
+    white;
+  transition: ease 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.75;
+  }
 `;

@@ -20,7 +20,7 @@ function Banner() {
             one-stop-shop for spending, saving, budgeting, investing , and much
             more.
           </Text>
-          <Button>Request invite</Button>
+          <Button>Request Invite</Button>
         </ContentBox>
       </Container>
     </Box>

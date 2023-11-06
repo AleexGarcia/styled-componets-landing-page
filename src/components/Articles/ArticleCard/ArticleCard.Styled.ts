@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ArticleBox = styled.div`
   display: grid;
   margin: 0 auto;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: auto 1fr;
   grid-template-columns: 100%;
   @media screen and (min-width: 768px) {
     max-width: 45%;
@@ -24,8 +24,14 @@ export const Image = styled.img`
 export const Author = styled.span`
   color: ${(props) => props.theme.colors.grayishBlue};
   font-size: 14px;
+  `;
+export const Title = styled.h4`
+  cursor: pointer;
+  transition: ease-in-out .25s ;
+  &:hover{
+    color: ${(props) => props.theme.colors.limeGreen};
+  }
 `;
-export const Title = styled.h4``;
 export const Description = styled.p`
   color: ${(props) => props.theme.colors.grayishBlue};
 `;
@@ -36,4 +42,5 @@ export const ContentBox = styled.div`
   gap: 1rem;
   background-color: ${props => props.theme.colors.lightGravishBlue};
   border-radius: 0 0 .5rem .5rem;
+
 `;

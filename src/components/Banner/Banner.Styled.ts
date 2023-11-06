@@ -1,14 +1,19 @@
 import styled from "styled-components";
 export const Box = styled.div`
-  min-height: 100vh;
+  padding-bottom: 2rem;
   background-repeat: no-repeat;
   background-image: url("src/assets/images/bg-intro-mobile.svg");
   background-size: 100% 66vh;
   background-position: top;
   @media screen and (min-width: 768px) {
     background-image: url("src/assets/images/bg-intro-desktop.svg");
-    background-position: 60vh -25vh;
+    background-position: 70vh -36vh;
     background-size: 90%;
+    height: 75vh;
+  }
+  @media screen and (min-width: 1024px) {
+    min-height: auto;
+    height: 75vh;
   }
 `;
 
@@ -23,6 +28,8 @@ export const Image = styled.div`
     height: 100vh;
     position: relative;
     object-fit: cover;
+    right: -15%;
+    bottom: 5%;
   }
 `;
 
@@ -38,6 +45,7 @@ export const Container = styled.div`
     grid-template-rows: 100%;
     height: 85vh;
     max-width: 100%;
+    overflow: hidden;
   }
 `;
 
@@ -48,12 +56,18 @@ export const ContentBox = styled.div`
   flex-direction: column;
   gap: 1.25em;
   justify-content: space-between;
+ 
   @media screen and (min-width: 768px) {
     order: -1;
     text-align: left;
     align-items: flex-start;
     margin-left: 10%;
   }
+  
+  @media screen and (min-width: 1024px) {
+    width: 60%;
+  }
+ 
 `;
 
 export const Title = styled.h2`

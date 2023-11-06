@@ -1,4 +1,4 @@
-import { Container, Link, Navigation } from "./Navbar.Styled";
+import { Container, ItemList, Link, NavList, Navigation } from "./Navbar.Styled";
 
 function Navbar() {
   const links = [
@@ -27,11 +27,15 @@ function Navbar() {
   return (
     <Container>
       <Navigation>
-        {links.map((link) => (
-          <Link key={link.name} href={link.url}>
-            {link.name}
-          </Link>
-        ))}
+        <NavList>
+          {links.map((link) => (
+            <ItemList key={link.name}>
+              <Link  href={link.url}>
+                {link.name}
+              </Link>
+            </ItemList>
+          ))}
+        </NavList>
       </Navigation>
     </Container>
   );

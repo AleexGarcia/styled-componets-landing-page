@@ -21,7 +21,8 @@ export const ArticlesCardsBox = styled.div`
     @media screen and (min-width: 768px) {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 1%;
+        column-gap: 1%;
+        row-gap: 1rem;
     }
 
 `;

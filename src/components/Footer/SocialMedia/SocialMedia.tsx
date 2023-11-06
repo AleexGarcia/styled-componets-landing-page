@@ -3,23 +3,23 @@ import { Box, Link, Icon } from "./SocialMedia.Styled";
 function SocialMedia() {
   const socialmedia = [
     {
-      icon: "src/assets/images/icon-facebook.svg",
+      icon: "src/assets/images/IconFacebook.svg",
       url: "#",
     },
     {
-      icon: "src/assets/images/icon-youtube.svg",
+      icon: "src/assets/images/IconYoutube.svg",
       url: "#",
     },
     {
-      icon: "src/assets/images/icon-twitter.svg",
+      icon: "src/assets/images/IconTwitter.svg",
       url: "#",
     },
     {
-      icon: "src/assets/images/icon-pinterest.svg",
+      icon: "src/assets/images/IconPinterest.svg",
       url: "#",
     },
     {
-      icon: "src/assets/images/icon-instagram.svg",
+      icon: "src/assets/images/IconInstagram.svg",
       url: "#",
     },
   ];
