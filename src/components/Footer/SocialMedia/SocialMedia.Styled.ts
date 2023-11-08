@@ -1,6 +1,4 @@
 import styled from "styled-components";
-
-
 export const Box = styled.div`
   display: flex;
   flex-direction: row;
@@ -10,6 +8,12 @@ export const Box = styled.div`
     grid-column: 1 / 2;
   }
 `;
-export const Link = styled.a``;
-export const Icon = styled.img`
+export const Link = styled.a`
+  color: white;
+  transition: ease-in-out .25s;
+  &:hover{
+    color: ${props => props.theme.colors.limeGreen};
+  }
 `;
+
+

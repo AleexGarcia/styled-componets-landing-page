@@ -23,6 +23,7 @@ export const Link = styled.a`
   text-decoration: none;
   border: 0;
   @media screen and (min-width: 1024px) {
+ 
     &:hover {
       cursor: pointer;
       border-image: linear-gradient(

@@ -1,33 +1,45 @@
-import { Box, Link, Icon } from "./SocialMedia.Styled";
+import { Box, Link } from "./SocialMedia.Styled";
+
+import IconFacebook  from '../../../assets/images/IconFacebook.svg?react'
+import IconTwitter  from '../../../assets/images/IconTwitter.svg?react'
+import IconInstagram  from '../../../assets/images/IconInstagram.svg?react'
+import IconPinterest  from '../../../assets/images/IconPinterest.svg?react'
+import IconYoutube  from '../../../assets/images/IconYoutube.svg?react'
 
 function SocialMedia() {
   const socialmedia = [
     {
-      icon: "src/assets/images/IconFacebook.svg",
+      name: 'facebooks',
+      icon: <IconFacebook/>,
+      url: "#facebook",
+    },
+    {
+      name: 'twitter',
+      icon: <IconTwitter/>,
+      url: "#twitter",
+    },
+    {
+      name: 'instagram',
+      icon: <IconInstagram/>,
       url: "#",
     },
     {
-      icon: "src/assets/images/IconYoutube.svg",
+      name: 'pinterest',
+      icon: <IconPinterest/>,
       url: "#",
     },
     {
-      icon: "src/assets/images/IconTwitter.svg",
-      url: "#",
-    },
-    {
-      icon: "src/assets/images/IconPinterest.svg",
-      url: "#",
-    },
-    {
-      icon: "src/assets/images/IconInstagram.svg",
+      name: 'youtube',
+      icon: <IconYoutube/>,
       url: "#",
     },
   ];
+  
   return (
     <Box>
       {socialmedia.map((media) => (
-        <Link key={media.icon} target="_blank" href={media.url}>
-          <Icon src={media.icon} />
+        <Link key={media.name} target="_blank" href={media.url}>
+          {media.icon}
         </Link>
       ))}
     </Box>

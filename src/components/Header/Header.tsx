@@ -17,7 +17,7 @@ function Header() {
   const toggleMenu = () => {
     isOpen ? setMenu(false) : setMenu(true);
   };
-  const matches = useMediaQuery('(min-width:1024px');
+  const matches = useMediaQuery("(min-width:1024px");
 
   return (
     <HeaderBox>
