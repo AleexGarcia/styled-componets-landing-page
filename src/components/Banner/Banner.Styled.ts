@@ -2,11 +2,11 @@ import styled from "styled-components";
 export const Box = styled.div`
   padding-bottom: 2rem;
   background-repeat: no-repeat;
-  background-image: url("src/assets/images/bg-intro-mobile.svg");
+  background-image: url("/assets/images/bg-intro-mobile.svg");
   background-size: 100% 66vh;
   background-position: top;
   @media screen and (min-width: 768px) {
-    background-image: url("src/assets/images/bg-intro-desktop.svg");
+    background-image: url("/assets/images/bg-intro-desktop.svg");
     background-position: 70vh -36vh;
     background-size: 90%;
     height: 75vh;
@@ -18,7 +18,7 @@ export const Box = styled.div`
 `;
 
 export const Image = styled.div`
-  background-image: url("src/assets/images/image-mockups.png");
+  background-image: url("/assets/images/image-mockups.png");
   background-size: cover;
   background-position: 0% 100%;
   background-repeat: no-repeat;
